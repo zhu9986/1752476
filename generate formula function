@@ -1,0 +1,41 @@
+void generate()
+{
+	int j = rand() % 3 + 3;//运算数字个数
+	int a = rand() % j;//乘除法的个数
+	int sum;//总和
+	sum = rand() % 100;
+	cout << sum;
+	fout << sum;
+	for (int k = 1; k <= a; k++)
+	{
+		int n;
+		n = rand() % 100;
+		int b;
+		b= rand() % 2;
+		switch (b)
+		{
+		case 0:sum = sum * n; cout << "*" ; fout << "*"; break;
+		case 1:sum = sum / n; cout << "/" ; fout << "/"; break;
+		default:cout<<"error";
+		}
+		cout << n;
+		fout << n;
+	}
+	for (int g = 1; g <= j-1-a; g++)
+	{
+		int q;
+		q = rand() % 100;
+		int d;
+		d = rand() % 2;
+		switch (d)
+		{
+		case 0:sum = sum + q; cout << "+" ;  fout << "+"; break;
+		case 1:sum = sum - q; cout << "-" ;  fout << "-"; break;
+		default:cout << "error";
+		}
+		cout << q;
+		fout << q;
+	}
+	cout << "=" << sum;
+	fout << "=" << sum;
+}
