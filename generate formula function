@@ -39,3 +39,4 @@ void generate()
 	cout << "=" << sum;
 	fout << "=" << sum;
 }
+ 
