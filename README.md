@@ -1,4 +1,3 @@
 # 1752476
 Addition, subtraction, multiplication and division algorithm
-
-just a repository
+main function and head file in the main file
