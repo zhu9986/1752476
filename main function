@@ -1,0 +1,24 @@
+#include "pch.h"
+#include<stdio.h>
+#include<stdlib.h>
+#include<fstream>
+#include<time.h>
+#include <iostream>
+using namespace std;
+ofstream fout("result.txt");
+int main()
+{
+	cout << "Student ID: "<<"1752476 朱铭皓"<<endl;
+	fout << "Student ID: " << "1752476 朱铭皓" << endl;
+	srand((int)time(NULL));
+	cout << "please enter the number of problems"<<endl;
+	fout << "please enter the number of problems" << endl;
+	int i;
+	cin >> i;
+	for(int j=1;j<=i;j++)
+	{
+		generate();
+		cout << endl;
+		fout << endl;
+	}
+}
